@@ -1,0 +1,50 @@
+🎮 Game_Design – Interactive Game Concept & System Design Project
+
+Type: Concept / Prototype
+Timeline: 2024
+Role: Lead Game Designer & Information Systems Architect
+
+🎯 Overview
+
+This project is a game design prototype I created to explore how player choice, system feedback, and information flow can drive meaningful engagement. The game concept centers around a dynamic “city simulation” where players manage resource flows, citizen behaviors, and emergent events, and the underlying system logs and processes these into visible feedback loops.
+In line with my application focus on information systems and management, the project emphasizes how design systems can function as information ecosystems, not just entertainment.
+
+🧩 Design Goals
+
+Define a core game loop that reflects real-world resource management and decision consequences (e.g., “build → monitor → respond to citizen event → optimize”).
+
+Build a feedback system where player actions generate data, which then influences game state and visible metrics (satisfaction, resource balance, risk).
+
+Design a modular architecture for events and behaviours so new events can be added without rewriting major code – reflecting my interest in system scalability and governance.
+
+Integrate analytics & transparency: players can open “City Dashboard” to see event logs, resource trends, citizens’ complaints, enabling them to adjust strategy—this mirrors enterprise dashboards in information management.
+
+💼 My Role & Contributions
+
+Led the concept and design of the game’s information flow model, mapping how player actions translate into system states and feedback.
+
+Developed the event-model schema, defining event types (e.g., “Service Request”, “Infrastructure Breakdown”, “Public Protest”), their triggers, outcomes, and impact on city metrics.
+
+Created a dashboard prototype (visual mock-up) for monitoring resource usage, citizen satisfaction, and event frequency, which exposed how system design supports player decision making.
+
+Defined metadata and logging standards for in-game events to ensure data could be aggregated, audited and visualised—applying information governance principles in a game context.
+
+Documented the game design process in a “mini-GDD” (Game Design Document) focusing less on art/engine and more on mechanics, information schemas and player workflows.
+
+🧠 Why It Demonstrates My Application Focus
+
+Information Systems Thinking: The game was designed as a system of interconnected data flows, not just mechanics—mirroring how businesses manage information assets.
+
+Governance & Scalability: By designing modular event schemas and metadata standards, I translated creative design into a repeatable, governable structure.
+
+Decision Support & Transparency: The dashboard concept shows how players (or stakeholders) can make informed decisions based on underlying data—a parallel to business intelligence and analytics in my field of study.
+
+Cross-functional Design: The project required thinking about mechanics, UI, data modelling, and player psychology—bridging game design and information management disciplines.
+
+🧩 Skills Demonstrated
+
+Game Loop Design · Event & Feedback Modeling · Dashboard & Info Visualisation · Metadata Standards · Game Design Documentation · System Thinking
+
+💬 Note
+
+This project is a concept/prototype and does not include full production assets or engine build. The emphasis is on design systems and information-centric architecture.

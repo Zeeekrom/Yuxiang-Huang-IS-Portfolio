@@ -1,0 +1,170 @@
+💼 Internships — From Creative Work to Information Systems
+
+This section documents real workflow experiences from three internships:
+Tencent IEG (Honor of Kings), Lilith Games (AIGC Pipeline), and Perfect World (AI Environment Art).
+All information is depersonalized; only the systems, documentation structure, and information-management practices are retained.
+
+🧩 Most Complex Information Flow — Tencent IEG (Honor of Kings)
+Systems and Documents Accessed Daily
+1) Data & Telemetry (supporting win/pick/telemetry analysis)
+
+Internal BI Dashboards: segmented win rates, pick-ban data, match duration, KDA, damage share, usage heat (P0/P1…King tier; 7/14/30-day windows).
+
+Data Warehouse / SQL:
+
+Example tables: hero_metrics_daily, match_skill_events (skill cast / hit / kill / control frames), economy_timeline (gold & XP curves), ab_result_summary (A/B aggregates).
+
+Logs & Replays: combat logs (killfeed, damage_tick, ability_cast), client/server replay tools for verifying mechanic triggers.
+
+2) Experiment & Parameter Configuration (for balance iteration)
+
+Experiment / Gray-release platform: create and monitor skill parameter tests (damage, cooldown, mana cost, hitbox size, effect threshold); track sample size, significance, stop-rules.
+
+Configuration center / parameter sheets: hero growth curves, skill frame data, equipment / rune / buff coefficients; hotfix switches and rollback conditions.
+
+3) Design & Version Management
+
+Design doc library: hero design intent, frame data, collision & hit rules, meeting notes.
+
+Iteration boards (TAPD / Jira): numerical change tasks, validation lists, defect reports, milestones, release changelogs.
+
+4) QA & Quality Monitoring
+
+Test-case library: edge-case combos, frame validation, abnormal state overlaps (silence / knock-up / vulnerability stacks).
+
+Performance dashboards: crash rate, frame drop, skill chain latency; alert logs and regression results.
+
+5) Operations & External Feedback
+
+Tournament / high-rank reports: comparing pro-match samples vs ladder play.
+
+Community / support tag reports: frequent complaints or misunderstandings, to separate “experience issues” from “numerical strength.”
+
+6) Daily Stakeholders to Sync With
+
+Numerical & gameplay designers, client/server engineers, data analysts, QA testers, operations & esports teams.
+
+Typical Multi-System Scenarios
+(1) Gray-Release for Hero Parameter Tuning
+
+Data viewed: segmented win/pick rates, match duration, economy curves, A/B significance & sample size.
+
+Tools used: BI dashboard + SQL + experiment platform + configuration center.
+
+Alignment: design, client/server, analytics, QA, operations.
+
+Outputs: modification notes, test cases, gray-release plan (scope, thresholds, stop rules), rollback config, changelog.
+
+(2) Skill-Mechanic Anomaly Investigation
+
+Data viewed: event timestamps, abnormal logs, outlier KDA / damage peaks.
+
+Tools: combat logs & replay tools, TAPD/Jira tickets, frame tables, collision-rule docs.
+
+Alignment: gameplay, animation/physics, backend logic, QA.
+
+Outputs: reproduction videos, frame-table fixes, prioritized defect list, regression checklist.
+
+(3) Community or Esports “Overpowered” Review
+
+Data viewed: pro vs public win-rate gap, lane-time & economy lead curves, counter matrix.
+
+Tools: sentiment reports, BI comparison boards, layered SQL queries, A/B platform.
+
+Outputs: categorized conclusions (experience / perception / numeric), communication brief, micro-adjustment plan & release window.
+
+(4) Pre-Release “Regression + Rollback” Audit
+
+Data viewed: gray-release curves, crash/freeze rate, KPI thresholds.
+
+Tools: monitoring dashboards, rollback scripts, test-coverage reports.
+
+Alignment: client/server leads, QA, Ops/Publishing.
+
+Outputs: rollout plan, alert thresholds, rollback ownership, final release checklist.
+
+🧩 AIGC Content-Pipeline Pain Points and Solutions
+Problem	Manifestation	My Handling	Further Optimization
+Too many asset/model versions; unclear lineage	Multiple LoRA / Prompt / ControlNet versions per style; final package untraceable.	Created minimal “Model/Prompt Cards” recording base model, weight, sampler, CFG, ControlNet type; wrote who/when/which_model/which_prompt metadata before commit.	Add model registry & hash validation.
+Style inconsistency; heavy manual curation	Cross-level lighting & angle drift, different prompt habits.	Built golden reference board (10–20 key images), preset templates (ComfyUI/SD params + negative list); dual-channel review (subjective + similarity).	Add style classifier / embedding alignment for semi-auto filtering.
+Incomplete requests; repeated clarification	Missing usage/resolution/deadline/license info.	Enforced request template (use case, res/aspect, refs, must/optional elements, license window); no ticket → no schedule.	Integrate mandatory template into request system.
+Format mismatch before Unity/UE import	Different export size/color space/bit depth.	Co-wrote batch preprocessing script (rename, unify size/color space/LOD) with TA; must pass local self-check before merge.	CI hook for auto validation.
+Unclear license boundaries	Ambiguous third-party rights & expiry.	Added license tags & expiry fields; built sample registry (source, agreement, limitations) + weekly reminder.	Connect to legal contract database.
+Invisible efficiency	Team tracked quantity but not conversion.	Built lightweight dashboard showing generation → usable → packaged; annotated rejection causes.	Auto-link dashboard to asset DB.
+GPU resource contention	LoRA training and batch inference overlapped.	Created resource booking & priority pools; made low-VRAM presets for previews.	Implement job-queue manager & budget alerts.
+🧩 Methods to Improve Discoverability and Collaboration
+
+Naming & Tagging Convention (Minimal Viable Rule)
+
+[Project_AssetType_Style_Res_Version_Date_Author]
+
+
+Unified tags:
+style:filmic | lora:v3.2 | cn:openpose | res:2048x1024 | color:sRGB | lic:comm-ok
+→ Immediate clarity on usage, style, version, license; supports fuzzy search & batch ops.
+
+Asset Metadata Cards (Model/Prompt Cards)
+Fields: base_model, lora_id, lora_alpha, ckpt_hash, sampler, steps, cfg, controlnet(type,strength), seed_range, author, date.
+→ One card per model/prompt version; stored with asset for easy rollback and traceability.
+
+Request Templates (Single-Source Alignment)
+Mandatory fields: purpose, resolution/ratio, style ref, mutable/fixed elements, release window, license limits.
+→ No template, no scheduling; missing fields fixed in weekly sync.
+
+Directory & Index Convention
+
+/Project/AssetType(Character/Env/FX)/StylePack/Version/BatchID/
+
+
+asset_index.csv (asset_id, path, tags, lic, version, source, status)
+→ Faster cross-user search; clear in-package status.
+
+Pre-Import Batch Scripts (UE/Unity)
+Auto-unify naming, size, color space, bit depth; generate thumbnails & LOD presets; export fail list.
+Must run before commit; CI re-checks before merge.
+
+Version & Lineage Table (Lightweight Traceability)
+
+final_asset_id ← batch_id ← model_version ← prompt_version ← controlnet_cfg
+
+
+→ One-page lineage map for rollback & reproduction.
+
+“Golden Style” Baseline Boards
+10–20 benchmark images per character/theme with evaluation criteria (composition, lighting ratio, material, tone).
+Used for both training reference and review scoring.
+
+Reusable Preset Library (ComfyUI/SD)
+Common resolution, lighting, camera, material setups; negative-prompt blacklist; scene templates.
+→ Newcomers productive immediately; veterans maintain consistency.
+
+Lightweight Efficiency Dashboard
+Metrics: generation → usable → packaged; rejection reasons (style, resolution, license, import fail); avg processing time.
+→ Weekly summaries visualize bottlenecks & guide iteration.
+
+Mini Glossary of Terms
+Examples:
+style:filmic = “realistic-film look”;
+lic:comm-ok = “commercial use allowed”;
+lock:hair_color = “non-modifiable element.”
+→ Ensures shared vocabulary across art / 3D / TA / design / legal.
+
+Document Templates & Definition of Done (DoD)
+Standard bundle: style guide, parameter log, import checklist, review notes, rollback plan.
+→ Must pass all checks before asset submission.
+
+Permission Zones
+Asset library divided into production / review / release areas; release zone read-only.
+→ Prevents accidental overwrite or deletion.
+
+🌐 Takeaway
+
+Through these internships I wasn’t just “creating content.”
+I saw how large studios manage data, versioning, and cross-department alignment—
+from BI dashboards and A/B tests to LoRA registries and asset metadata cards.
+
+Each process answered the same question:
+How can information stay clear, trustworthy, and reusable?
+
+“What began as gameplay or art production became a study of data governance —
+every table, tag, and template is a small act of keeping chaos in check.”
