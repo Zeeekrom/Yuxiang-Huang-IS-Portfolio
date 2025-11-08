@@ -2,7 +2,7 @@
 
 **Type:** Academic Coursework Project  
 **Course:** Introduction to Statistics  
-**Institution:** Saint Martin’s University, USA  
+**Institution:** UC San Diego Extension (3 credits)
 **Timeline:** Spring 2025  
 **Role:** Lead Analyst & Documentation Coordinator  
 
