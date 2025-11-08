@@ -2,9 +2,9 @@
 
 **Type:** Academic Coursework Project  
 **Course:** Introduction to Statistics  
-**Institution:** UC San Diego Extension (3 credits)
+**Institution:** UC San Diego Extension (3 credits)  
 **Timeline:** Spring 2025  
-**Role:** Lead Analyst & Documentation Coordinator  
+**Role:** Lead Analyst & Documentation Coordinator
 
 ---
 
