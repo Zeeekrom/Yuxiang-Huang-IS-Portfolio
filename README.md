@@ -1,38 +1,53 @@
-📂 Yuxiang Huang – Information Systems & Management Portfolio
+# 📂 Yuxiang Huang – Information Systems & Management Portfolio  
 
-Author: Yuxiang Huang
-Email: a2463489610@gmail.com
+**Author:** Yuxiang Huang  
+**Email:** [a2463489610@gmail.com](mailto:a2463489610@gmail.com)  
 
-Focus Areas: Information Systems · Information Management · Project Management · Data Governance
+**Focus Areas:** Information Systems · Information Management · Project Management · Data Governance  
 
-👋 About Me
+---
 
-I am a software engineering student specializing in information systems, data governance, and AI-driven project management.
-My academic and industry experience bridges structured management frameworks (PMBOK, Agile) with system design and data analytics.
-I enjoy transforming complex workflows into measurable, well-documented solutions that connect technology with business strategy.
+## 👋 About Me  
 
-🧭 Overview
+I am a software engineering student specializing in **information systems**, **data governance**, and **AI-driven project management**.  
+My academic and industry experience bridges creative production, data analytics, and system design — connecting how information is **collected, organized, and transformed into actionable decisions**.  
 
-This portfolio presents selected academic and professional projects that demonstrate my ability to design, manage, and optimize information systems.
-Each project reflects my interest in connecting data architecture, management strategy, and cross-functional collaboration.
+Through research, coursework, and internships at Tencent, Lilith Games, and Perfect World, I have explored how large-scale organizations manage complex data flows, balance human collaboration with automation, and ensure reliability through information governance.  
 
-Each project folder includes a concise README and selected materials such as figures, analysis reports, or system diagrams.
+This portfolio presents the systems, workflows, and analytical frameworks I built or studied across different domains — from multi-agent simulations and AIGC pipelines to academic research and enterprise data processes.  
 
-📘 Featured Projects
-Project	Description	Type
-AFK Arena 2 – Project Management Plan
-	A full-scale PMP applying Agile and PMBOK frameworks for a simulated mobile game production pipeline, focusing on scope, cost, and risk integration.	🎯 IT Project Management
-Cyber FinCity
-	A Web3-based financial education metaverse integrating AIGC content generation and data governance frameworks.	🏙️ Information Management & System Design
-AI Town
-	A multi-agent virtual simulation inspired by Stanford’s Generative Agents, modeling autonomous agents with memory and reflection.	🧠 Information Systems Architecture
-Research – Predicting Student Performance (DEIT 2025)
-	A data-driven education analytics project using Random Forest models to predict student outcomes (R² ≈ 0.93).	📊 Research / Data Analysis
-Internships – AIGC & Data Pipeline Experience
-	Internship experiences at Tencent, Lilith Games, and Perfect World, focusing on AIGC workflows, data pipelines, and system integration.	🏢 Industry Experience
-Entrepreneurship Project
-	Co-founded an AR-based AIGC content platform with multiplayer spatial mapping and procedural generation systems.	🚀 Innovation & Leadership
-💬 Note
+---
 
-This repository is created for graduate admission review and academic demonstration.
-All sensitive or company-specific information has been summarized and anonymized.
+## 🧭 Repository Structure  
+
+| Folder                           | Focus                         | Description                                                  |
+| :------------------------------- | :---------------------------- | :----------------------------------------------------------- |
+| **AI_Town/**                     | Multi-Agent Simulation        | Independent research on agent memory, reflection, and decision loops using structured event logs. |
+| **CyberFinCity/**                | Project Management Case       | Full PMP documentation for *AFK Arena 2*, demonstrating information flow, governance, and scheduling systems. |
+| **AR_Metaverse_Platform/**       | Entrepreneurship Project      | AR + AIGC-based startup prototype combining asset lineage, workflow governance, and business analytics. |
+| **Game_Design/**                 | Concept & System Design       | Game prototype highlighting event schemas, feedback loops, and data-driven transparency in design. |
+| **Database_Web_Development/**    | Coursework (Exchange Program) | End-to-end database & web app development linking relational models to user-facing information flow. |
+| **Intro_to_Statistics_Project/** | Coursework (Data Analysis)    | Applied statistics for automotive data; demonstrated hypothesis testing and regression analysis. |
+| **Research_Paper_DEIT2025/**     | Academic Research             | Educational data-mining study using Random Forest to predict student performance with process metrics. |
+| **Internships/**                 | Industry Experience           | Tencent IEG, Lilith Games, Perfect World — focusing on how studios govern data, assets, and cross-team information flows. |
+
+---
+
+## 🎯 Purpose  
+
+This repository showcases my progression from **creative execution** to **system-level thinking** —  
+how information is **structured, stored, transferred, and reused** across different domains.  
+
+**Core Themes:**  
+- 🧩 **Information Architecture** – Designing schemas, metadata, and traceable records.  
+- 🗂️ **Data Governance** – Building processes that ensure accuracy, lineage, and compliance.  
+- 📊 **Decision Support Systems** – Turning logs, analytics, and dashboards into actionable insights.  
+- 🔄 **Cross-Domain Integration** – Bridging creative, academic, and technical workflows under consistent frameworks.  
+
+---
+
+## 💬 Notes  
+
+- All data, assets, and documents have been **anonymized and simplified** for academic or professional demonstration.  
+- No confidential or proprietary materials from previous employers are included.  
+- Each folder contains its own `README.md` describing context, workflow, and outcomes.  
