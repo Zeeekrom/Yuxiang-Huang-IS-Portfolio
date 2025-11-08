@@ -20,7 +20,7 @@ In line with my academic focus on **Information Systems and Management**, the pr
 - Define a **core game loop** that reflects real-world resource management and decision consequences (e.g., “build → monitor → respond to citizen event → optimize”).  
 - Build a **feedback system** where player actions generate data that influence game state and visible metrics (satisfaction, resource balance, risk).  
 - Design a **modular architecture** for events and behaviors so new content can be added without rewriting major code — reflecting system scalability and governance.  
-- Integrate **analytics & transparency**: players can open a *City Dashboard* to view event logs, resource trends, and citizen feedback, mirroring enterprise dashboards in information management.
+- Integrate **analytics & transparency:** players can open a *City Dashboard* to view event logs, resource trends, and citizen feedback, mirroring enterprise dashboards in information management.
 
 ---
 
@@ -38,8 +38,8 @@ In line with my academic focus on **Information Systems and Management**, the pr
 
 - **Information Systems Thinking:** The game was designed as a network of interconnected data flows, mirroring enterprise information management structures.  
 - **Governance & Scalability:** Modular event schemas and metadata standards turned creative design into a repeatable, governable framework.  
-- **Decision Support & Transparency:** The *City Dashboard* represents an in-game decision-support system—paralleling business intelligence dashboards.  
-- **Cross-functional Design:** Bridged mechanics, UI, data modeling, and player psychology—illustrating the intersection between game design and information management.
+- **Decision Support & Transparency:** The *City Dashboard* represents an in-game decision-support system — paralleling business intelligence dashboards.  
+- **Cross-functional Design:** Bridged mechanics, UI, data modeling, and player psychology — illustrating the intersection between game design and information management.
 
 ---
 
@@ -51,5 +51,12 @@ Game Loop Design · Event & Feedback Modeling · Dashboard & Info Visualization 
 
 ## 💬 Note
 
-This project is a **concept/prototype** and does not include full production assets or engine build.  
-The emphasis is on **design systems** and **information-centric architecture**.
+This project includes a **functional prototype built with partial production assets**, emphasizing **system architecture and design logic** over full production scope.
+
+---
+
+<p align="center">
+  <img src="poster_game_design.png" alt="Game Design Poster" width="720" loading="lazy">
+  <br>
+  <em>Poster</em>
+</p>
