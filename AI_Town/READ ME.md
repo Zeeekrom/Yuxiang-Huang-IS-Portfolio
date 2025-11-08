@@ -1,7 +1,7 @@
 # 🧠 AI Town – Multi-Agent Simulation System
 
 **Type:** Independent System Design & Research  
-**Timeline:** 2024–2025  
+**Timeline:** 09/2025 
 **Tech Stack:** Python · Django · Phaser · JSON Event Logs  
 
 ---
